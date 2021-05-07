@@ -1,0 +1,64 @@
+/* header */
+header {
+  padding: 205px 0 270px 0;
+  background-image: url(../images/hero-bg.png);
+  background-position: 20% 90%;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 50px;
+}
+
+header .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .content .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .content .left-side img {
+  max-width: 360px;
+}
+
+header .content .left-side p {
+  font-size: 18px;
+  color: #3C3E42;
+}
+
+header .content .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .content .right-side ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .content .right-side ul li img {
+  max-width: 120px;
+}
+/*# sourceMappingURL=mainStyle.css.map */
