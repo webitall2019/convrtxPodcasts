@@ -59,8 +59,8 @@
  */
 
  /* Cera Pro font */
-@import './fonts/fonts.css';
-@import './fonts/stylesheet.css';
+@import '../fonts/fonts.css';
+@import '../fonts/stylesheet.css';
 :root {
   --blue: #2095f2;
   --indigo: #6610f2;
@@ -173,8 +173,11 @@ ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0;
+  
 }
-
+li{
+  list-style: none;
+}
 dt {
   font-weight: 700;
 }
@@ -2366,27 +2369,6 @@ textarea.form-control {
   }
 }
 
-.btn {
-  /* width: 170px; */
-  height: 56px;
-  display: inline-block;
-  font-weight: 400;
-  color: #27333e;
-  text-align: center!important;
-  vertical-align: middle;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background-color: transparent;
-  border: 2px solid transparent;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  position: relative;
-  z-index: 1000;
-}
 
 @media (prefers-reduced-motion: reduce) {
   .btn {
@@ -10347,20 +10329,67 @@ button:focus {
 }
 
 .btn {
+  max-width: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
   text-decoration: none;
-  letter-spacing: 1.45px;
-  font-weight: 400;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  border-radius: 12px;
-  white-space: normal;
-  text-align: left;
+  background: #5575E8;
+  box-shadow: 0px 34px 74px -23px #5575E8;
+  border-radius: 20px;
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+          cursor: pointer;
+          padding: 33px 70px;
+          font-size: 24px;
+          margin: 0 auto;
 }
 
+.small-btn{
+  max-width: 330px;
+  margin: 0 auto;
+  padding: 25px 70px;
+}
+.btn-before-icon::before{
+  position: absolute;
+  top: -156px;
+    left: -125px;
+    width: 180px;
+  height: 150px;
+  content: '';
+  background-image: url(../images/glossy.png);
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+@media screen and (max-width: 768px) {
+  .small-btn{
+    max-width: 250px;
+    padding: 15px;
+  }
+  .btn-before-icon::before{
+    width: 80px;
+    height: 80px;
+    top: -79px;
+    left: -25px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .btn{
+    max-width: 400px;
+    padding: 20px 30px;
+    font-size: 18px;
+  }
+  .small-btn{
+    padding: 15px;
+  }
+}
 .btn .icon {
   margin-right: 8px;
 }
