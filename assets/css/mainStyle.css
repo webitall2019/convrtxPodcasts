@@ -43,7 +43,7 @@ header .left-side {
 }
 
 header .left-side img {
-  max-width: 385px;
+  max-width: 100%;
 }
 
 header .left-side p {
