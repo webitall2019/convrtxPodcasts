@@ -52,6 +52,9 @@ header .left-side p {
 }
 
 @media screen and (max-width: 425px) {
+  header {
+    padding-top: 50px;
+  }
   header .left-side {
     margin-bottom: 30px;
   }
