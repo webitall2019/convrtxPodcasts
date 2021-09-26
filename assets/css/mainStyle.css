@@ -97,6 +97,8 @@ header .right-side ul li img {
 }
 
 @media screen and (max-width: 425px) {
+  .header{
+  padding-top: 50px}
   header .right-side {
     margin-bottom: 40px;
   }
