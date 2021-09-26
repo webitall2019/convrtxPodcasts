@@ -152,8 +152,8 @@ header .header-second-stage .right-side .text-content p {
   bottom: -30px;
   left: 0px;
   height: 10px;
-  background-position: contain;
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
   width: 100%;
 }
 
